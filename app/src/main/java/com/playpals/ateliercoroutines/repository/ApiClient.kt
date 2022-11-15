@@ -5,7 +5,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val myNodeServerLink = "http://192.168.100.150:1337/"
+const val myNodeServerLink = "http://192.168.128.1:1337/"
 object ApiClient {
     var mHttpLoggingInterceptor = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)

@@ -21,12 +21,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/getData', async (req, res) => {
     await new Promise(resolve => setTimeout(resolve, 2000));
-    res.status(200).json({data: 'Hello World!'}); // envoyer la réponse au requérant
+    res.status(200).json({data: 'Hello World! Random number: ' + Math.floor(Math.random()*9999)}); // envoyer la réponse au requérant
 })
 
 
 app.listen(port, () => {
-console.log(`Server running at http://localhost:${port}/`);
+console.log(`Server is running at http://localhost:${port}/`);
 });
 
 
